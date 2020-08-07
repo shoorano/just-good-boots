@@ -1,0 +1,28 @@
+.icon-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 12vh;
+    width: fit-content;
+    min-width: 5vw;
+
+    & .icon {
+        transform: rotate(-15deg) translate3D(5px, -10px, 0px);
+        position: relative;
+        height: 90%;
+        border: 0px solid;
+        padding: 0;
+        margin: 0;
+    }
+
+    & .icon-footer {
+        font-size: x-small;
+        font-weight: bold;
+        position: relative;
+        top: -1.5vh;
+        border: 0px solid;
+        padding: 0;
+        margin: 0;
+    }
+}

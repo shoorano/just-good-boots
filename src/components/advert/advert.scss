@@ -1,0 +1,42 @@
+.advert {
+    border-top: 1px solid gray;
+    height: 67vh;
+    width: 80%;
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    pointer-events: none;
+
+     .advert-image {
+        height: 64vh;
+        width: 100%;
+        pointer-events: none;
+    }
+
+     .advert-title {
+         color: black;
+        background-color: azure;
+        opacity: 0.7;
+        text-decoration: none;
+        position: relative;
+        bottom: 62.5%;
+        left: 0vw;
+        padding: 3.5vh 4.5vw;
+        transform-origin: center;
+        pointer-events: auto;
+    }
+
+    &:hover {
+        .advert-image {
+            opacity: 0.5;
+            transform: scale(1.4);
+            transition: all 3s;
+        }
+
+        .advert-title {
+            opacity: unset;
+        }
+    }
+}
